@@ -1,7 +1,7 @@
-const Footer=()=>{
+const Header=()=>{
     return(
         <></>
     )
 }
 
-export default Footer;
+export default Header;
