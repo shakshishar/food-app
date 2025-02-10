@@ -1,7 +1,8 @@
-// import { Geist, Geist_Mono } from "next/font/google";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Roboto } from "next/font/google";
+import 'antd/dist/reset.css'; 
 import "./globals.css";
+
+const roboto=Roboto({subsets:['Latin'],weight: ["400","500","700"]})
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -21,8 +22,11 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={roboto.className}>
+
+        <main className="max-w-5xl mx-auto border p-4">
         {children}
+        </main>
       </body>
     </html>
   );

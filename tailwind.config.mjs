@@ -7,10 +7,10 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      colors:{
+        primary:'#f13a01'
       },
+      
     },
   },
   plugins: [],

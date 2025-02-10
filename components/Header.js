@@ -1,30 +1,26 @@
+import Link from "next/link";
+import { UserOutlined } from '@ant-design/icons';
+import { Avatar } from 'antd';
+
 const Header=()=>{
     return(
-       
-        <div className="flex items-center justify-between p-3">
-            {/* the logo part */}
-            <div className="flex item-center">
-                <img src="null" alt=""></img>
-            </div>
-
-            {/* the menus */}
-            <div>
-                <ul className="flex space-x-8">
-                    <li>Home</li>
-                    <li>Explore more</li>
-                    <li>Contact Us</li>
-                    <li>About</li>
-                </ul>
-
-            </div>
-
-            {/* the profile */}
-            <div>
-                <button className="px-4 py-2 text-black">
-
-                </button>
-            </div>
+        <div>
+        <div className="flex items-center justify-between">
+        <Link href="" className="text-primary font-semibold text-2xl">PIZZA's</Link>
+        <nav className="flex gap-8 text-gray-500 font-semibold" >
+          <Link href={'/'}>Home</Link>
+          <Link href="./menu">Menu</Link> 
+          <Link href={''}>About</Link>
+          <Link href={''}>Contact</Link>
+          <Link href={'/login'} style={{ display: 'flex', alignItems: 'center', marginTop:"-5px"}}>
+            <Avatar size="medium" style={{background:"red", color:"white"}} icon={<UserOutlined />} />
+            
+            </Link>
+        </nav>
         </div>
+        {/* <hr className="mt-2 border-primary" /> */}
+
+          </div> 
     )
 }
 
