@@ -1,17 +1,23 @@
 import { BannerSlider } from "@/components/BannerSlider";
 import Banner from "@/components/Banner";
-import Header from '@/components/Header';
+
 import Hero from "@/components/Hero";
-import Footer from '@/components/Footer';
+
 import HomeMenu from "@/components/HomeMenu";
+import AboutUs from "@/components/AboutUs";
+import ContactUs from "@/components/ContactUs";
 
 
 export default function Home() {
-  return (
+return (
    <>
-<Header/>
+
+{/* <BannerSlider/> */}
 <Hero/>
 <HomeMenu/>
+<AboutUs/>
+<ContactUs/>
+
    </>
   );
 }

@@ -5,9 +5,9 @@ const Hero =()=>{
 
     return(
         <>
-        <section  className="flex justify-between items-center mt-10">
-            <div className="max-w-md mx-auto">
-            <h1 className="text-5xl font-semibold w-10/12">Everything is better with a<span className="text-primary"> Pizza</span></h1>
+        <section  className="flex justify-between  items-center mt-10">
+            <div className="max-w-md p-6 mx-auto hover:shadow-2xl hover:transition-all">
+            <h1 className="text-6xl font-semibold w-10/12">Everything is better with a<span className="text-primary"> Pizza</span></h1>
             <p className="mt-8 text-gray-500 text-sm w-11/12">Pizza is the missing piece that makes every day complete, a simple yet delicious joy in life</p>
             <div className="flex justify-left gap-4 mt-8">
                 <button className="bg-primary text-gray-100 flex text-lg p-3 hover:bg-orange-600 hover:scale-105 w-38 border rounded-xl">
@@ -21,7 +21,7 @@ const Hero =()=>{
             </div>
             
             </div>
-          <div className="max-w-md mx-auto relative right-0">
+          <div className="max-w-md mx-auto relative right-0 ">
             <Image src={'/image1.png'} 
             alt={'pizza'}
             width={600}

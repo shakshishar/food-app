@@ -1,31 +1,62 @@
-"use client"
+"use client";
 import React from "react";
+import Image from "next/image";
 
-import {useRef} from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
- import 'swiper/css';
- import "swiper/css/autoplay";
-import 'swiper/css/navigation';
-import { Navigation,Autoplay} from 'swiper/modules';
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import { Autoplay } from "swiper/modules";
 
-
-export const BannerSlider=()=>{
-    return(
-        <Swiper navigation={true}
+export const BannerSlider = () => {
+  return (
+    <div className="mt-16">
+      <Swiper
         autoplay={{
-            delay:3000,
-            disableOnInteraction:false,
-        }} modules={[Navigation,Autoplay]} className="mySwiper w-[100%]">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        className="mySwiper mx-auto"
+      >
+        <SwiperSlide>
+          <Image 
+            src="/image4.jpg" 
+            width={900} 
+            height={300} 
+            alt="first slide" 
+            className="h-[300px] mx-auto object-cover rounded-md" 
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image 
+            src="/image5.jpg" 
+            width={900} 
+            height={300} 
+            alt="second slide" 
+            className="h-[300px] mx-auto object-cover rounded-md" 
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image 
+            src="/imge6.jpeg" 
+            width={900} 
+            height={300} 
+            alt="third slide" 
+            className="h-[300px] mx-auto object-cover rounded-md" 
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image 
+            src="/image4.jpg" 
+            width={900} 
+            height={300} 
+            alt="fourth slide" 
+            className="h-[300px] mx-auto object-cover rounded-md" 
+          />
+        </SwiperSlide>
       </Swiper>
-    )
-}
+    </div>
+  );
+};
