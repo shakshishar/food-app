@@ -21,7 +21,7 @@ const Hero =()=>{
             </div>
             
             </div>
-          <div className="max-w-md mx-auto relative right-0 ">
+          <div className="max-w-md mx-auto relative hidden md:block right-0 ">
             <Image src={'/image1.png'} 
             alt={'pizza'}
             width={600}

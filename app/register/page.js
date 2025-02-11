@@ -16,6 +16,7 @@ const Register = () => {
           <Input 
             placeholder="Enter your full name" 
             className="w-full border-0 border-b-2 border-gray-400 hover:!border-primary focus:!border-primary focus:!outline-none focus:!ring-0 font-bold"
+            style={{ boxShadow: "none", outline: "none" }}
           />
         </Form.Item>
 
@@ -30,6 +31,7 @@ const Register = () => {
           <Input 
             placeholder="Enter your email" 
             className="w-full border-0 border-b-2 border-gray-400 hover:!border-primary focus:!border-primary focus:!outline-none focus:!ring-0 font-bold"
+            style={{ boxShadow: "none", outline: "none" }}
           />
         </Form.Item>
 
@@ -45,7 +47,8 @@ const Register = () => {
             placeholder="Enter your contact number" 
             maxLength={10} 
             className="w-full border-0 border-b-2 border-gray-400 hover:!border-primary focus:!border-primary focus:!outline-none focus:!ring-0 font-bold"
-          />
+            style={{ boxShadow: "none", outline: "none" }}
+         />
         </Form.Item>
 
         <Form.Item
@@ -56,7 +59,8 @@ const Register = () => {
           <Input.TextArea 
             placeholder="Enter your address" 
             rows={3} 
-            className="w-full border-0 border-b-2 border-gray-400 hover:!border-primary focus:!border-primary focus:!outline-none focus:!ring-0 font-bold"
+            className="w-full border-0 border-b-2 !border-gray-400 hover:!border-primary focus:!border-primary focus:!outline-none focus:!ring-0 font-bold"
+            style={{ boxShadow: "none", outline: "none" }}
           />
         </Form.Item>
 

@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center mb-10">
-        <ul className="flex justify-center space-x-12 mt-3 text-gray-500">
+        <ul className="flex justify-center space-x-12 md:flex-col xl:flex-row lg:flex-row md:mt-0 lg:mt-3 xl:mt-3 text-gray-500">
             <li className="hover:scale-110 hover:transition-all">Home</li>
             <li className="hover:scale-110 hover:transition-all" >About US</li>
             <li className="hover:scale-110 hover:transition-all">Contact Us</li>
