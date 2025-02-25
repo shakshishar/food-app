@@ -20,7 +20,10 @@ export async function POST(req) {
       return NextResponse.json({ message: "Incorrect password", type: "error" }, { status: 401 });
     }
 
-    return NextResponse.json({ message: "Login successful!", type: "success" }, { status: 200 });
+    return NextResponse.json({ message: "Login successful!", type: "success",
+      name: user.name,
+      password:user.password,
+       }, { status: 200 });
 
   } catch (error) {
     console.error("Login error:", error);

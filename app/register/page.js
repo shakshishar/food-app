@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Form, Input, Button,message } from "antd";
+import Link from "next/link";
 import toast from "react-hot-toast";
 
 const Register = () => {
@@ -57,6 +58,7 @@ const Register = () => {
           rules={[
             { required: true, message: "Please input your email!" },
             { type: "email", message: "Please enter a valid email!" },
+            { pattern: /^[a-zA-Z0-9._%+-]+@gmail\.com$/, message: "Only Gmail accounts are allowed!" },
           ]}
         >
           <Input 
@@ -109,6 +111,7 @@ const Register = () => {
 
 
         <Form.Item>
+        <Link href="/">
           <Button 
           type="primary" 
           htmlType="submit" 
@@ -116,6 +119,7 @@ const Register = () => {
          >
             Register
           </Button>
+          </Link>
         </Form.Item>
       </Form>
     </section>
