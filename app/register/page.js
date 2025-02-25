@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Form, Input, Button,message } from "antd";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const [form]=Form.useForm();
@@ -18,16 +19,16 @@ const Register = () => {
       const data = await response.json();
       // console.log("data",data);
       if (response.ok) {
-        message.success(data.message);
+        toast.success(data.message);
 
         form.resetFields();
       } else {
         console.error("Server error:", data.message);
-        message.error(data.message);
+        toast.error(data.message);
       }
     } catch (error) {
       console.error("Network error:", error);
-      message.error("Something went wrong in register", error);
+      toast.error("Something went wrong in register", error);
     }
   }
   
